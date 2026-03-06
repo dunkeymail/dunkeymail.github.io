@@ -1,8 +1,8 @@
 const mockProfile = {
-  name: "John Doe",
+  name: "Aideen Foley",
   id: "183629837",
-  venue: "Fenriz Gym",
-  activity: "Boxing",
+  venue: "Solinca Classic Dragão",
+  activity: "Natação Livre",
   image: "profile.jpg"
 };
 
