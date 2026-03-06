@@ -10,7 +10,6 @@ const scannerScreen = document.getElementById("scanner-screen");
 const loadingScreen = document.getElementById("loading-screen");
 const successScreen = document.getElementById("success-screen");
 const startBtn = document.getElementById("start-btn");
-const resetBtn = document.getElementById("reset-btn");
 const statusEl = document.getElementById("status");
 
 const profileImage = document.getElementById("profile-image");
