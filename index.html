@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Check-In Mockup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <section id="scanner-screen" class="screen active">
+      <div class="scanner-header">
+        <h1>Ready to check in?</h1>
+        <p>Scan any QR code with your camera.</p>
+      </div>
+
+      <div class="scanner-card">
+        <div id="reader"></div>
+        <div class="scan-frame"></div>
+      </div>
+
+      <button id="start-btn">Start camera</button>
+      <div id="status"></div>
+    </section>
+
+    <section id="loading-screen" class="screen">
+      <div class="loading-box">
+        <div class="spinner"></div>
+        <p>Checking you in…</p>
+      </div>
+    </section>
+
+    <section id="success-screen" class="screen success">
+      <div class="success-top">
+        <img id="profile-image" src="profile.jpg" alt="Profile" />
+        <h2 id="profile-name">John Doe</h2>
+        <div class="subtle">ID: <span id="profile-id">183629837</span></div>
+        <div class="success-text">Check-in: Successful</div>
+      </div>
+
+      <div class="details">
+        <div class="row"><span>Venue</span><strong>Fenix Gym</strong></div>
+        <div class="row"><span>Activity</span><strong>Boxing</strong></div>
+        <div class="row"><span>Scanned QR</span><strong id="qr-preview">QR detected</strong></div>
+      </div>
+
+      <button id="reset-btn">Scan another code</button>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  <script src="app.js"></script>
+</body>
+</html>
