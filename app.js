@@ -138,6 +138,5 @@ async function resetApp() {
 }
 
 startBtn.addEventListener("click", startScanner);
-resetBtn.addEventListener("click", resetApp);
 
 populateSuccess();
